@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Day-10</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='CSS/Day-10.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+</head>
+<body>
+    <div class="header" id="tp">
+        <a href="http://onelink.to/tvwwv5?utm_source=tasktysitetopbar&utm_medium=apptopbar&utm_campaign=stickytopbar_downloadapp" class="he-2"><b>Subscribe Now</b> in Coursaty App And Enjoy Our Best Courses With Best Prices</a>
+        <a href="http://onelink.to/tvwwv5?utm_source=tasktysitetopbar&utm_medium=apptopbar&utm_campaign=stickytopbar_downloadapp" class="he"><img src="https://taskty.com/images/icon-appicons.png" alt="img"> Download </a>
+    </div>
+    <nav>
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="data:image/jpeg;base64,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" alt="img">
+            </div>
+            <div class="links">
+                <ul class="boss">
+                    <li><a href="Day-10.html">Home</a></li>
+                    <li>
+                        <div class="drop1"><span class="dr">Specialization</span> <span class="arr">⬆</span>
+                            <div class="drop2">
+                                <ul class="bg_1">
+                                    <li class="sel_1">CS</li>
+                                    <ul class="sm_1">
+                                        <li>Cyber Security</li>
+                                        <li>Web Developement</li>
+                                        <li>Software Engineering</li>
+                                        <li>Programming</li>
+                                    </ul>
+                                    <li class="sel_2">IT</li>
+                                    <ul class="sm_2">
+                                        <li>Software Engineering</li>
+                                        <li>Database Administration</li>
+                                        <li>Network Engineering</li>
+                                        <li>Network Management</li>
+                                    </ul>
+                                    <li class="sel_3">IS</li>
+                                    <ul class="sm_3">
+                                        <li>Web Developer</li>
+                                        <li>Programmer Analyst</li>
+                                        <li>Systems Administrator</li>
+                                        <li>Software Developer</li>
+                                    </ul>
+                                    <li class="sel_4">OR</li>
+                                    <ul class="sm_4">
+                                        <li>Simulation</li>
+                                        <li>Project Scheduling</li>
+                                        <li>Queuing Theory</li>
+                                        <li>Network Models</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../Day-5 Task/log in.html" target="_blank">Log In</a></li>
+                    <li><a href="../Day-5 Task/register.html" target="_blank">Register</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/generalmody111" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="tel:01095498159" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://discord.gg/Em5n58tm" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="l_side">
+            <aside>
+                <h3>Computer Science</h3>
+                <p>includes a wide range of occupations, job titles, and responsibilities. Whether you belong to Science, Technology, Engineering, or Mathematics background, CS can lead you to your dream career. With its application in almost every field, CS gives you the maximum options to land a job in any industry. As per the White House, by 2020, there would be around 1.4 million CS-related jobs for Computer Science majors.</p>
+                <h3>Information Technology</h3>
+                <p>Professionals with business competency and a background in information systems continue to prove immeasurably helpful in easing the transition into the era of big data.
+
+                    A major component of the modern information technology landscape is the area of predictive analytics, where a grasp of business metrics combined with industry and management know-how is critical to profitable operations. Information technology and computer science serve many of the same industries, and usually from fairly similar operations perspectives. Students can be confident that IT and computer science will continue to exert an influence on the development of the tech industry in years to come.</p>
+                <h3>Information System</h3>
+                <p>The Information Systems specialization teaches the application of computers to business problems. The program provides in-depth study of the use of the systems approach, methods of systems design, and the application of the computer as a functional tool within an organization.
+
+                    Students of this program can analyze an organization's information needs, plan a computer-based delivery system to meet these needs, and direct the implementation and operation of the system.</p>
+                <h3>Operation Research</h3>
+                <p>In the specialisation in Operations Research (OR) you will learn how to design mathematical methods that help to improve many facets of our increasingly complex society. With a specialisation in OR you will easily find work for example as a business or data analyst.
+
+                    Through studying OR, you will learn how to design mathematical methods aimed at optimal decision making. Subjects covered in this specialisation include Discrete and Continuous Optimisation, Game Theory, Markov Decision Theory, and Queuing Theory. Upon graduation you will have acquired a broad theoretical foundation in these areas, and know how to apply and implement analytical and algorithmic tools, that enable ground-breaking progress in business and society.</p>
+            </aside>
+        </div>
+        <div class="r_side">
+            <div class="up">
+                <div class="tb">
+                    <table>
+                        <thead>
+                            <th>Course</th>
+                            <th>Price</th>
+                            <th>State</th>
+                            <th>Location</th>
+                            <th>Offer</th>
+                        </thead>
+                        <tr>
+                            <td>Web Developement</td>
+                            <td>500$</td>
+                            <td>Offline</td>
+                            <td>Tanta</td>
+                            <td>Offer 50% <br>
+                                <del>500$</del> <ins>250$</ins>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>200$</td>
+                            <td>Online</td>
+                            <td>Cairo</td>
+                            <td>Offer 25% <br>
+                                <del>200$</del> <ins>150$</ins>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>400$</td>
+                            <td>Online</td>
+                            <td>Alex</td>
+                            <td>Offer 20% <br>
+                                <del>400%</del> <ins>320$</ins>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>600$</td>
+                            <td>Offline</td>
+                            <td>Cairo</td>
+                            <td>Offer 30% <br>
+                                <del>600$</del> <ins>420$</ins>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Networking</td>
+                            <td>400$</td>
+                            <td>Online</td>
+                            <td>Tanta</td>
+                            <td>Offer 25% <br>
+                                <del>400$</del> <ins>300$</ins>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>300$</td>
+                            <td>Offline</td>
+                            <td>Cairo</td>
+                            <td>Offer 50% <br>
+                                <del>300$</del> <ins>150$</ins> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="list">
+                    <h3>Some Of Specializations</h3>
+                    <ul>
+                        <li><b>CS</b>
+                            <ul>
+                                <li>Cyber Security</li>
+                                <li>Software Engineering</li>
+                                <li>Artificial Intelligence</li>
+                                <li>Data Science</li>
+                                <li>Robotics</li>
+                                <li>Programming</li>
+                                <li>Computer Information Systems</li>
+                            </ul>
+                        </li>
+                        <li><b>IT</b>
+                            <ul>
+                                <li>IT Security</li>
+                                <li>Computer Systems</li>
+                                <li>Software Engineering</li>
+                                <li>Database Administration</li>
+                                <li>Network Engineering</li>
+                                <li>Network Management</li>
+                            </ul>
+                        </li>
+                        <li><b>IS</b>
+                            <ul>
+                                <li>Web Developer</li>
+                                <li>Programmer Analyst</li>
+                                <li>Systems Administrator</li>
+                                <li>Software Developer</li>
+                            </ul>
+                        </li>
+                        <li><b>OR</b>
+                            <ul>
+                                <li>Simulation</li>
+                                <li>Project Scheduling</li>
+                                <li>Queuing Theory</li>
+                                <li>Network Models</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mid">
+                <h1 class="GM" autofocus><b>Registeration</b></h1><br><br>
+    <form class="a">
+        <fieldset>
+            <legend><img src="../Another Sources/My_Project/gm1.jpeg" size="20px" class="pic"></legend>
+            <h1>Sign Up</h1>
+            <label class="u" for="un">First Name:</label>
+            <input type="text" class="un" required>
+            <label class="u" for="un">Last Name:</label>
+            <input type="text" class="un"required><br><br>
+            <label class="da" for="d">Date OF Birth:</label>
+            <input type="date" class="d"required><br><br>
+            <label for="sel">Choose The Course</label>
+            <select name="course" id="sel">
+                <option value="op1">Web Developement</option>
+                <option value="op2">Python</option>
+                <option value="op3">C#</option>
+                <option value="op4">Java</option>
+                <option value="op5">Networking</option>
+                <option value="op6">C++</option>
+            </select><br><br>
+            <label class="e" for="em">Email:</label>
+            <input type="email" class="em" required><br><br>
+            <label class="pho" for="ph">Phone:</label>
+            <input type="number" class="ph" required><br><br>
+            <div class="big">
+                <div>
+                    <p>Gender</p><br>
+                    <input type="checkbox" class="ge1" value="Male" required>
+                    <label for="ge1" class="ge1">Male</label>
+                    <input type="checkbox" class="ge2" value="Female" required>
+                    <label for="ge2" class="ge2">Female</label><br><br>
+                </div>
+                <div>
+                    <p>Skills</p>
+                    <input type="radio" class="n1" value="Html" required>
+                    <label for="n1" class="n11">HTML</label>
+                    <input type="range" class="r1" value="Html" required><br>
+                    <input type="radio" class="n2" value="Css" required>
+                    <label for="n2" class="n22">CSS</label>
+                    <input type="range" class="r2" value="Css" required><br>
+                    <input type="radio" class="n3" value="JS" required>
+                    <label for="n3" class="n33">JS</label>
+                    <input type="range" class="r3" value="JS" required><br>
+                </div>
+            </div><br>
+            <label for="f" class="f1">Faculty Card</label>
+            <input type="file" class="f" value="CV" required><br><br>
+            <label for="f" class="f4">Comment</label><br>
+            <textarea name="comment" id="f" cols="60" rows="10" placeholder="Leave Us A Comment"></textarea><br><br>
+            <input type="button" value="Register" class="butt"><br><br>
+        </fieldset>
+    </form>
+            </div>
+            <h2>Exclusive Discounts</h2>
+            <div class="bot">
+                <div class="upper">
+                    <div>
+                        <h3>Computer Science</h3>
+                        <img src="https://blog.khamsat.com/wp-content/uploads/2014/11/%D8%AF%D9%88%D8%B1%D8%A9-%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-768x432.png" alt="">
+                        <h4>Discount 30%</h4>
+                    </div>
+                    <div>
+                        <h3>Web Developement</h3>
+                        <img src="https://blog.khamsat.com/wp-content/uploads/2014/11/%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85.png" alt="">
+                        <h4>Discount 20%</h4>
+                    </div>
+                    <div>
+                        <h3>PHP</h3>
+                        <img src="https://blog.khamsat.com/wp-content/uploads/2014/11/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8.png" alt="">
+                        <h4>Discount 50%</h4>
+                    </div>
+                </div>
+                <div class="down">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <img src="https://blog.khamsat.com/wp-content/uploads/2014/11/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA.png" alt="">
+                        <h4>Discount 40%</h4>
+                    </div>
+                    <div>
+                        <h3>Ruby</h3>
+                        <img src="https://blog.khamsat.com/wp-content/uploads/2014/11/%D9%84%D8%BA%D8%A9-%D8%B1%D9%88%D8%A8%D9%8A.png" alt="">
+                        <h4>Discount 25%</h4>
+                    </div>
+                    <div>
+                        <h3>Python</h3>
+                        <img src="https://blog.khamsat.com/wp-content/uploads/2014/11/%D8%AF%D9%88%D8%B1%D8%A9-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-Python-768x432.png" alt="">
+                        <h4>Discount 40%</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#tp"><button class="bt_up">UP</button></a>
+    </div>
+    <footer>
+        <div class="foot">
+            <div>
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/d/viewer?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ll=28.40265302961325%2C29.703865187499986&z=5" target="_blank"><i class="fa-solid fa-location-dot"></i>10Street,Menof,Egypt</a></li>
+                    <li><a href="tel:+201095498159"><i class="fa-solid fa-phone"></i>+201095498159</a></li>
+                    <li><a href="mailto:generalmody200@gmail.com"><i class="fa-solid fa-envelope"></i>generalmody200@gmail.com</a></li>
+                    <li><a href="https://www.facebook.com/generalmody111" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="tel:01095498159" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://discord.gg/Em5n58tm" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../Day-3 Task/Day-3.html">Home</a></li>
+                    <li><a href="../Day-3 Task/Format.html" target="_blank">About Us</a></li>
+                    <li><a href="../Day-3 Task/Contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="../Day-3 Task/Day-3.html">Gaming</a></li>
+                    <li><a href="../Day-3 Task/Format.html" target="_blank">Stream</a></li>
+                    <li><a href="../Day-4 Task/Day-4.html" target="_blank">Best Gamers</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
