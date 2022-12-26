@@ -15,7 +15,9 @@ spec:
         app: nginx
     spec:
       containers:
-        - image: os-project/nginx
+        - image: hathout/os-project
+          ports:
+            - containerPort: 80
           name: nginx-container
           imagePullPolicy: IfNotPresent
           resources:
